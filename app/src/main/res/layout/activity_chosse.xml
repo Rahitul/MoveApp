@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChosseActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@drawable/choose_background">
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="আপনি কি হিসাবে"
+            android:textSize="18dp"
+            android:textColor="#fff">
+
+        </TextView>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="সাইন ইন"
+            android:textSize="35dp"
+            android:textColor="#fff">
+
+        </TextView>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="করতে চান?"
+            android:textSize="18dp"
+            android:textColor="#fff">
+
+        </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_person_black_24dp">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="130dp"
+        android:id="@+id/admin"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="এডমিন"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/customer_btn">
+    </Button>
+
+    <Button
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/customer"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="কাস্টোমার"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/customer_btn">
+    </Button>
+
+    <Button
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/driver"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="পার্টনার"
+        android:textSize="18sp"
+        android:background="@drawable/partner_btn">
+
+    </Button>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="বাতিল"
+        android:textSize="18dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/note"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="10dp"
+        android:text="নোট"
+        android:textColor="#fff"
+        android:background="@drawable/note_btn">
+
+    </TextView>
+
+
+
+</LinearLayout>

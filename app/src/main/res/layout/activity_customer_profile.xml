@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerProfileActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@drawable/choose_background">
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="প্রোফাইল"
+                android:textSize="30dp"
+                android:textColor="#fff">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_perm_contact_calendar_black_24dp">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_image_black_24dp"
+            android:id="@+id/profileimage">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/customerName"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="নাম"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/text_view_background">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/customerPhone"
+            android:background="@drawable/text_view_background"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="ফোন"
+            android:layout_marginBottom="10sp"
+            android:inputType="number">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_marginRight="14dp"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="কনফার্ম"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:id="@+id/confirm"
+            android:background="@drawable/confirm_btn">
+
+        </Button>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="ফিরুন"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:id="@+id/back"
+            android:background="@drawable/back_btn">
+
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>

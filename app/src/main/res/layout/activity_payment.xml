@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@drawable/choose_background">
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost estimation"
+                android:textSize="30dp"
+                android:textColor="#fff">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_monetization_on_black_24dp">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="50dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:inputType="textAutoComplete"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/firstDestination"
+                android:hint="Starting Point"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/log_in_edit_text_background">
+
+            </AutoCompleteTextView>
+
+            <AutoCompleteTextView
+                android:inputType="textAutoComplete"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/secondDestination"
+                android:hint="Destination"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/log_in_edit_text_background">
+
+            </AutoCompleteTextView>
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/firstDestinationDropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_down_24">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/secondDestinationDropDown"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_down_24">
+
+                </ImageView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:layout_marginRight="14dp"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="কনফার্ম"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:id="@+id/confirm"
+            android:background="@drawable/confirm_btn">
+
+        </Button>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="বাতিল"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:id="@+id/cancel"
+            android:background="@drawable/back_btn">
+
+        </Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/customer_btn"
+        android:text="খরচ দেখুন"
+        android:textColor="#fff">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cost_show"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@drawable/card_view"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="40dp">
+
+
+                <TextView
+                    android:text="খরচঃ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:textColor="#fff">
+
+                </TextView>
+
+                <TextView
+
+                    android:text="ডিসকাউন্টঃ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:textColor="#fff"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <TextView
+
+                    android:text="মোটঃ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:textColor="#fff"
+                    android:paddingBottom="10dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cost_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:layout_marginLeft="18dp"
+                    android:textColor="#fff">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/discount_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:layout_marginLeft="18dp"
+                    android:textColor="#fff"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/total_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:layout_marginLeft="18dp"
+                    android:textColor="#fff"
+                    android:paddingBottom="10dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

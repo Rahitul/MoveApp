@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CustomerMapActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="লগ আউট"
+            android:id="@+id/logout"
+            android:layout_gravity="top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/back_btn">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/start_btn"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/homeshift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Shift"
+                android:textColor="#fff">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/truck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Truck"
+                android:textColor="#fff">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/labour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Labourer"
+                android:textColor="#fff">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call move"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/callmove"
+            android:background="@drawable/start_btn">
+
+        </Button>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/driverinfo"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@drawable/card_view_white"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/driverProfileImage"
+            android:src="@drawable/illustration"
+            android:padding="20dp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driverName"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp"
+                android:text="Rahitul Islam">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driverPhone"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp"
+                android:text="01305578370">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driverTypeofwork"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp">
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/receipt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receipt"
+                android:textColor="#fff"
+                android:background="@drawable/confirm_btn"
+                android:layout_marginBottom="10dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/call_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:textColor="#fff"
+                android:background="@drawable/customer_btn">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/temp_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/temp_costWithDis"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

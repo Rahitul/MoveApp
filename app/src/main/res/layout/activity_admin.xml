@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADMIN PANEL"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000">
+
+    </TextView>
+
+    <Button
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/customerlist"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Customer List"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/customer_btn">
+    </Button>
+
+    <Button
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/driverlist"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Driver List"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/customer_btn">
+    </Button>
+
+    <Button
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/receiptlist"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Recipt"
+        android:textSize="18sp"
+        android:background="@drawable/partner_btn">
+
+    </Button>
+
+</LinearLayout>

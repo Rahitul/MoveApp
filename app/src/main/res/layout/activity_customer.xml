@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@drawable/choose_background">
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="সাইন ইন"
+                android:textSize="35dp"
+                android:textColor="#fff">
+
+            </TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="রেজিস্ট্রেশন"
+                android:textSize="25dp"
+                android:textColor="#fff">
+
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_person_black_24dp">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+        <EditText
+            android:background="@drawable/log_in_edit_text_background"
+            android:layout_marginTop="100dp"
+            android:hint="   ই-মেইল"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp">
+
+        </EditText>
+
+        <EditText
+            android:background="@drawable/log_in_edit_text_background"
+            android:hint="   পাসওয়ার্ড"
+            android:padding="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp">
+
+        </EditText>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginRight="14dp"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="সাইন ইন"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:id="@+id/login"
+                android:background="@drawable/customer_btn">
+
+            </Button>
+
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="রেজিস্ট্রেশন"
+                android:textSize="18sp"
+                android:background="@drawable/partner_btn">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
